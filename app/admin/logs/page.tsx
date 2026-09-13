@@ -1,0 +1,1 @@
+import { AdminTable } from "@/components/admin-view";export default function Page(){return <AdminTable title="Classification logs" text="System-wide audit records retain only a 200-character excerpt." path="/api/v1/admin/classifications" columns={["log_id","user","email_excerpt","predicted_label","confidence_score","needs_review","submitted_at"]} exportButton/>}

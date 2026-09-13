@@ -1,0 +1,3 @@
+"use client";
+import { useEffect,useState } from "react"; import { AppShell,PageTitle } from "@/components/app-shell"; import { HistoryRows } from "@/app/dashboard/page"; import { api,type HistoryItem } from "@/lib/api";
+export default function HistoryPage(){const[items,setItems]=useState<HistoryItem[]>([]);useEffect(()=>{api<HistoryItem[]>("/api/v1/classification/history").then(setItems)},[]);return <AppShell><PageTitle eyebrow="Private audit trail" title="My submission history" text="Only you can see these classifications. Complete message bodies are never stored."/><div className="glass-panel rounded-[30px] p-5 sm:p-7"><HistoryRows items={items}/></div></AppShell>}

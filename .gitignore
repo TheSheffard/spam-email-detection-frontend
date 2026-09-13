@@ -1,0 +1,13 @@
+
+# Next.js
+node_modules/
+.next/
+out/
+
+
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+

@@ -1,0 +1,1 @@
+import { AdminTable } from "@/components/admin-view";export default function Page(){return <AdminTable title="Feedback review" text="Inspect confirmations and disagreements collected for controlled future retraining." path="/api/v1/admin/feedback" columns={["feedback_id","log_id","user","predicted_label","confirmed_label","feedback_at"]}/>}
